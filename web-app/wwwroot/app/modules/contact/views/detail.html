@@ -1,0 +1,34 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading">
+        Contato
+    </div>
+    <div class="panel-body">
+        <form role="form" name="ctrl.form" novalidate>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group" ng-class="{ 'has-error': ctrl.fieldInvalid('Name') }">
+                        <label class="control-label" for="Name">Nome</label>
+                        <input class="form-control" id="Name" ng-model="ctrl.contact.Name" type="text" name="Name" required="required">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="form-group" ng-class="{ 'has-error': ctrl.fieldInvalid('Email') }">
+                        <label class="control-label" for="Email">E-mail</label>
+                        <input class="form-control" id="Email" ng-model="ctrl.contact.Email" type="text" name="Email" required="required">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="form-group" ng-class="{ 'has-error': ctrl.fieldInvalid('Phone') }">
+                        <label class="control-label" for="Phone">Telefone</label>
+                        <input class="form-control" id="Phone" ng-model="ctrl.contact.Phone" type="text" name="Phone" required="required">
+                    </div>
+                </div>
+            </div>
+            <span class="buttons">
+                <button type="button" ng-click="ctrl.save()" class="btn btn-primary">Salvar</button>
+                <button type="button" ng-click="ctrl.cancel()" class="btn btn-default">Cancelar</button>
+                <button type="button" ng-if="ctrl.isEdit" ng-click="ctrl.deleteContact()" class="btn btn-danger">Excluir</button>
+            </span>
+        </form>
+    </div>
+</div>

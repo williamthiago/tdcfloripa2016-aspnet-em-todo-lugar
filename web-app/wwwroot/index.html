@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <style> 
+        img.os {
+            height: 30px;
+            float:right;
+        }
+    </style>
+
+    <base href="/">
+    <!--[if lt IE 9]>
+        <script src="libs/html5shiv/dist/html5shiv.js"></script>
+        <script src="libs/respond/src/respond.js"></script>
+    <![endif]-->
+
+    <title>TDC Floripa - ASP.NET em todo lugar!</title>
+</head>
+<body>
+    <span data-ui-view="root"></span>
+
+    <script src="libs/angular/angular.js"></script>
+    <script src="libs/angular-ui-router/release/angular-ui-router.js"></script>
+
+	<script src="app/app.module.js"></script>
+    <script src="app/app.config.js"></script>
+
+    <script src="app/modules/layout/app.layout.module.js"></script>
+    <script src="app/modules/layout/services/os.service.js"></script>
+    <script src="app/modules/layout/controllers/layout.controller.js"></script>
+
+    <script src="app/modules/contact/app.contact.module.js"></script>
+    <script src="app/modules/contact/app.contact.config.js"></script>
+    <script src="app/modules/contact/services/contact.service.js"></script>
+    <script src="app/modules/contact/controllers/contact-list.controller.js"></script>
+    <script src="app/modules/contact/controllers/contact-detail.controller.js"></script>
+</body>
+
+</html>

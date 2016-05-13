@@ -1,0 +1,25 @@
+{
+  "name": "tdc.aspnetcore.web",
+  "authors": [
+    "William Thiago"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.3",
+    "angular-ui-router": "0.2.18",
+    "bootstrap": "3.3.6",
+    "font-awesome": "4.5.0",
+    "html5shiv": "3.7.3",
+    "respond": "1.4.2"
+  }
+}
