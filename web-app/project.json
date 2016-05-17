@@ -2,11 +2,15 @@
   "version": "1.0.0-*",
 
   "buildOptions": {
-    "emitEntryPoint": true
+    "emitEntryPoint": true,
+    "debugType": "portable"
   },
   
   "dependencies": {
-    "Microsoft.NETCore.App": "1.0.0-*",
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.0-rc2-3002702"
+    },
     "Microsoft.AspNetCore.Mvc.Core": "1.0.0-*",
     "Microsoft.AspNetCore.Mvc.Formatters.Json": "1.0.0-*",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*",
